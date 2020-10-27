@@ -1,0 +1,39 @@
+@import './font.sass'
+@import './scrollbar.sass'
+@import './element.sass'
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td
+  margin: 0
+  padding: 0
+
+body,html,#app
+  overflow-x: hidden
+  @include wh(100%,100%)
+
+h1,h2,h3,h4
+  font-weight: 600
+  font-style: normal
+
+h5,h6,em,i
+  font-weight: 100
+  font-style: normal
+
+ul,ol,li
+  list-style-type: none
+
+a
+  color: #666
+  text-decoration: none
+  outline: 0
+
+a:hover
+  text-decoration: none
+
+.iconfont
+  font-size: 1.2rem
+  font-weight: 600
+
+.main-wrapper
+  .main-table
+    margin: 20px
+    .el-table

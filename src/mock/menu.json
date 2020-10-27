@@ -1,0 +1,44 @@
+{
+  "menu":[
+    {
+    "menuId":1001,
+    "menuName":"Dashboard",
+    "path":"/dashboard",
+    "icon":"icon-dashboard"
+  },{
+    "menuId":1002,
+    "menuName":"Article",
+    "path":"/article",
+    "icon":"icon-article"
+  },{
+    "menuId":1003,
+    "menuName":"Comment",
+    "path":"/comment",
+    "icon":"icon-custom-comment"
+
+  },{
+    "menuId":1004,
+    "menuName":"Timeline",
+    "path":"/timeline",
+    "icon":"icon-timeline"
+
+  },{
+    "menuId":1005,
+    "menuName":"Account",
+    "path":"/account",
+    "icon":"icon-account"
+
+  },{
+    "menuId":1006,
+    "menuName":"Friend",
+    "path":"/friend",
+    "icon":"icon-friends"
+
+  },{
+    "menuId":1007,
+    "menuName":"Setting",
+    "path":"/setting",
+    "icon":"icon-setting"
+
+  }
+]}
