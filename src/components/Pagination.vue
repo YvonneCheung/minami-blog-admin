@@ -1,6 +1,6 @@
 <template>
   <el-pagination :background="background"
-                 class="mt10 tr"
+                 class="mt10 fr"
                  :current-page.sync="currentPage"
                  :page-size.sync="pageSize"
                  :layout="layout"
@@ -41,7 +41,7 @@ export default {
     },
     layout: {
       type: String,
-      default: 'sizes, prev, pager, next, jumper'
+      default: 'prev, pager, next'
     },
     background: {
       type: Boolean,

@@ -2,14 +2,12 @@
   <div class="wrapper">
     <leftside></leftside>
     <div class="container">
-      <transition name="el-fade-in-linear" v-if="isRefresh">
-        <div class="image-blocks animated fadeInUp">
-          <image-block v-for="index of maxNum" :key="index"></image-block>
-        </div>
-      </transition>
-      <transition name="el-fade-in-linear">
-        <router-view></router-view>
-      </transition>
+      <div class="image-blocks animated fadeInUp"
+           v-if="isRefresh">
+        <image-block v-for="index of maxNum"
+                     :key="index"></image-block>
+      </div>
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -20,19 +18,19 @@ import ImageBlock from '@/components/ImageBlock'
 
 export default {
   components: { Leftside, ImageBlock },
-  data() {
+  data () {
     return {
       isRefresh: true,
       clientWidth: 0
     }
   },
   computed: {
-    maxNum() {
+    maxNum () {
       return parseInt(this.clientWidth / 200)
     }
   },
   watch: {
-    '$route.path'(val) {
+    '$route.path' (val) {
       this.isRefresh = false
       if (val !== '/dashboard') {
         this.$nextTick(() => {
@@ -41,7 +39,7 @@ export default {
       }
     }
   },
-  mounted() {
+  mounted () {
     this.clientWidth = document.body.getElementsByClassName(
       'container'
     )[0].clientWidth
