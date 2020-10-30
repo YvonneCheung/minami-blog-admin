@@ -38,7 +38,7 @@ export default {
   box-sizing: border-box
   border-right: 2px solid $textBg
   padding: 50px 12px 34px 20px
-  background: #fff
+  background: $background
   box-shadow: 0 0 10px 10px  $textBg
   @include wh(260px, 100%)
   @include position($position:fixed)
