@@ -24,6 +24,7 @@
 
 <script>
 import menu from '@/mock/menu.json'
+
 export default {
   data () {
     return {
@@ -34,7 +35,7 @@ export default {
 }
 </script>
 <style lang="sass" scoped>
-.leftside-layout 
+.leftside-layout
   box-sizing: border-box
   border-right: 2px solid $textBg
   padding: 50px 12px 34px 20px
@@ -42,22 +43,22 @@ export default {
   box-shadow: 0 0 10px 10px  $textBg
   @include wh(260px, 100%)
   @include position($position:fixed)
-  .l-info 
+  .l-info
     margin-bottom: 36px
     @include flex($just:flex-start)
-    .l-info-avatar 
+    .l-info-avatar
       margin-left: 16px
-    .l-info-name 
+    .l-info-name
       margin-left: 16px
       @include flex($dire: column, $align: flex-start)
-      .name 
-        font-weight: 600 
-      .name-sub 
+      .name
+        font-weight: 600
+      .name-sub
         font-size: 13px
         font-weight: 300
 
-  .l-menus 
-    .l-menus-item 
+  .l-menus
+    .l-menus-item
       color: #9593A0
       padding: 16px
       margin: 5px 0

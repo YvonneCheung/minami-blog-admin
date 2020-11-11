@@ -48,6 +48,21 @@ a:hover
 
 .main-wrapper
   .main-table
-    margin: 20px
+    margin: 20px 0
     .el-table
       margin-bottom: 10px
+
+.drawer-form
+  .el-form
+    height: 100%
+    width: 100%
+    padding-right: 30px
+    @include flex($dire:column)
+    .el-form-item
+      width: 100%
+    .markdown-form
+      flex-grow: 1
+      .el-form-item__content
+        #editor
+          margin: auto
+          height: calc( 100vh - 230px  )
